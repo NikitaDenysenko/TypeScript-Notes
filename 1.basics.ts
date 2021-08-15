@@ -22,3 +22,6 @@ const ids: Record<number, string> = {
   20: 'b'
 }
 ids[30] = 'c'
+
+//TODO unkown vs any
+//TODO as keyword
