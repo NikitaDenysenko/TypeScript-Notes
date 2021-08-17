@@ -11,14 +11,16 @@ const addThreeDCoordinate = (c1: ThreeDCoordinate, c2:ThreeDCoordinate): ThreeDC
 console.log(addThreeDCoordinate([37,31,31],[10,30,40]))
 
 //simpleStringState is like a useState()
-const simpleStringState = (initial: string): [() => string,(v: string) => void] => {
-    let str: string = initial
-    return [
-        () => str,
-        (v:string) => {
-            str = v
-        }
-    ]
+const simpleStringState = (
+  initial: string
+): [() => string, (v: string) => void] => {
+  let str: string = initial
+  return [
+    () => str,
+    (v: string) => {
+      str = v
+    }
+  ]
 }
 
 const [strGetter, strSetter] = simpleStringState('hello')
