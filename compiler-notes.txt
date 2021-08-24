@@ -1,0 +1,4 @@
+tsc 'fileName' -> compiles file
+tsc 'fileName' --watch -> compiles file on change
+tsc --init -> initializes a TypeScript project and creates a tsconfig.json file.
+tsc -> compiles all .ts files (works after initializing)
